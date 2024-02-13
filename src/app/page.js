@@ -102,6 +102,7 @@ export default function Home() {
       <div className="flex md:flex-row flex-col justify-center">
         {data.map((item) => (
           <div
+            key={item.id}
             className={`${itemStyle} ${item.color} ${item.justify} ${
               item.grow ? "flex-grow" : ""
             }`}
